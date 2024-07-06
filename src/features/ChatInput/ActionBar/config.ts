@@ -1,5 +1,6 @@
 import STT from '../STT';
 import Clear from './Clear';
+import Credtis from './Credits';
 import FileUpload from './FileUpload';
 import History from './History';
 import ModelSwitch from './ModelSwitch';
@@ -9,6 +10,7 @@ import Tools from './Tools';
 
 export const actionMap = {
   clear: Clear,
+  credits: Credtis,
   fileUpload: FileUpload,
   history: History,
   model: ModelSwitch,
@@ -26,8 +28,15 @@ type getActionList = (mobile?: boolean) => ActionKeys[];
 
 // we can make these action lists configurable in the future
 export const getLeftActionList: getActionList = (mobile) =>
-  ['model', 'fileUpload', 'temperature', 'history', !mobile && 'stt', 'tools', 'token'].filter(
-    Boolean,
-  ) as ActionKeys[];
+  [
+    'model',
+    'fileUpload',
+    'temperature',
+    'history',
+    !mobile && 'stt',
+    'tools',
+    'token',
+    'credits',
+  ].filter(Boolean) as ActionKeys[];
 
 export const getRightActionList: getActionList = () => ['clear'].filter(Boolean) as ActionKeys[];
