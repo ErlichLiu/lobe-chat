@@ -15,10 +15,12 @@ const Credits = () => {
   const [hasAPIKey, setHasAPIKey] = useState<boolean>(false);
   const [credits, setCredits] = useState<string>('不可用');
   const [subscription, setSubscription] = useState<string>('无');
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const usageAPI = 'https://openai.weavex.tech/v1/dashboard/billing/usage/';
   const subscriptionAPI = 'https://openai.weavex.tech/v1/dashboard/billing/subscription/';
 
   const handleQueryCredits = async (apiKey: string) => {
+    setIsLoading(true);
     try {
       // 查询剩余额度
       const usageResponse = await fetch(usageAPI, {
@@ -59,7 +61,11 @@ const Credits = () => {
         setCredits(calculatedCredits.toString());
       }
     } catch (error) {
+      setCredits('网络请求错误');
+      setSubscription('网络请求错误');
       console.error('Error fetching data:', error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -87,7 +93,13 @@ const Credits = () => {
     <Flexbox align="center" gap={8} horizontal padding="10px">
       {hasAPIKey ? (
         <Flexbox align="center" gap={8} horizontal>
-          剩余：{credits}，到期：{subscription}
+          {isLoading ? (
+            <span>加载中...</span>
+          ) : (
+            <>
+              剩余:{credits} ({subscription})
+            </>
+          )}
           <Flexbox align="center" gap="4px" onClick={() => handleQueryCredits(apiKey)}>
             <svg
               className="lucide lucide-refresh-ccw-dot"
