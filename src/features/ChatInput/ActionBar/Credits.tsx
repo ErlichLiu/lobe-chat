@@ -12,10 +12,10 @@ interface SubscriptionData {
 
 const Credits = () => {
   const [apiKey, setApiKey] = useState<string>('');
-  const [hasAPIKey, setHasAPIKey] = useState<boolean>(false);
   const [credits, setCredits] = useState<string>('不可用');
   const [subscription, setSubscription] = useState<string>('无');
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isEditing, setIsEditing] = useState<boolean>(false);
   const usageAPI = 'https://openai.weavex.tech/v1/dashboard/billing/usage/';
   const subscriptionAPI = 'https://openai.weavex.tech/v1/dashboard/billing/subscription/';
 
@@ -51,6 +51,9 @@ const Credits = () => {
         setSubscription(formattedDate);
       }
       if (isNaN(subscriptionData.system_hard_limit_usd - usageData.total_usage / 100)) {
+        alert(
+          '获取数据失败，可能是 API KEY 填写错误。您可以双击输入额度显示区域重新填写新的 API KEY。',
+        );
         setCredits('不可用');
         return;
       } else {
@@ -74,25 +77,35 @@ const Credits = () => {
     const storedApiKey = localStorage.getItem('apiKey');
     if (!storedApiKey) {
       // 如果没有 API Key，显示输入提示
-      setHasAPIKey(false);
+      setIsEditing(true);
     } else {
       // 如果有 API Key，查询剩余额度和订阅信息
       setApiKey(storedApiKey);
-      setHasAPIKey(true);
+      setIsEditing(false);
       handleQueryCredits(storedApiKey);
     }
   }, []);
 
   const handleSaveApiKey = () => {
-    localStorage.setItem('apiKey', apiKey);
-    setHasAPIKey(true);
-    handleQueryCredits(apiKey);
+    const trimmedApiKey = apiKey.trim();
+    if (trimmedApiKey) {
+      localStorage.setItem('apiKey', trimmedApiKey);
+      setApiKey(trimmedApiKey);
+      setIsEditing(false);
+      handleQueryCredits(trimmedApiKey);
+    } else {
+      alert('API KEY 不能为空');
+    }
+  };
+
+  const handleDoubleClick = () => {
+    setIsEditing(true);
   };
 
   return (
     <Flexbox align="center" gap={8} horizontal padding="10px">
-      {hasAPIKey ? (
-        <Flexbox align="center" gap={8} horizontal>
+      {!isEditing ? (
+        <Flexbox align="center" gap={8} horizontal onDoubleClick={handleDoubleClick}>
           {isLoading ? (
             <span>加载中...</span>
           ) : (
