@@ -49,7 +49,7 @@ ENV NEXT_PUBLIC_ANALYTICS_UMAMI="" \
     NEXT_PUBLIC_UMAMI_WEBSITE_ID=""
 
 # Node
-ENV NODE_OPTIONS="--max-old-space-size=8192"
+ENV NODE_OPTIONS="--max-old-space-size=5120"
 
 WORKDIR /app
 
