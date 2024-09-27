@@ -3,6 +3,7 @@ import Clear from './Clear';
 import History from './History';
 import Knowledge from './Knowledge';
 import ModelSwitch from './ModelSwitch';
+import QuotaDisplay from './QuotaDisplay';
 import Temperature from './Temperature';
 import Token from './Token';
 import Tools from './Tools';
@@ -14,6 +15,7 @@ export const actionMap = {
   history: History,
   knowledgeBase: Knowledge,
   model: ModelSwitch,
+  quota: QuotaDisplay,
   stt: STT,
   temperature: Temperature,
   token: Token,
@@ -37,6 +39,8 @@ export const getLeftActionList: getActionList = (mobile) =>
     !mobile && 'stt',
     'tools',
     'token',
+    'quota',
   ].filter(Boolean) as ActionKeys[];
 
-export const getRightActionList: getActionList = () => ['clear'].filter(Boolean) as ActionKeys[];
+export const getRightActionList: getActionList = () =>
+  ['clear', 'quota'].filter(Boolean) as ActionKeys[];
