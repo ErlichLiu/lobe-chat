@@ -332,8 +332,11 @@
   "gemini-1.5-flash-001": {
     "description": "Gemini 1.5 Flash 001 est un modèle multimodal efficace, prenant en charge l'extension d'applications variées."
   },
-  "gemini-1.5-flash-8b-exp-0827": {
-    "description": "Gemini 1.5 Flash 8B 0827 est conçu pour traiter des scénarios de tâches à grande échelle, offrant une vitesse de traitement inégalée."
+  "gemini-1.5-flash-002": {
+    "description": "Gemini 1.5 Flash 002 est un modèle multimodal efficace, prenant en charge une large gamme d'applications."
+  },
+  "gemini-1.5-flash-8b-exp-0924": {
+    "description": "Gemini 1.5 Flash 8B 0924 est le dernier modèle expérimental, offrant des améliorations significatives en termes de performance dans les cas d'utilisation textuels et multimodaux."
   },
   "gemini-1.5-flash-exp-0827": {
     "description": "Gemini 1.5 Flash 0827 offre des capacités de traitement multimodal optimisées, adaptées à divers scénarios de tâches complexes."
@@ -343,6 +346,9 @@
   },
   "gemini-1.5-pro-001": {
     "description": "Gemini 1.5 Pro 001 est une solution d'IA multimodale extensible, prenant en charge une large gamme de tâches complexes."
+  },
+  "gemini-1.5-pro-002": {
+    "description": "Gemini 1.5 Pro 002 est le dernier modèle prêt pour la production, offrant une qualité de sortie supérieure, avec des améliorations notables dans les domaines des mathématiques, des contextes longs et des tâches visuelles."
   },
   "gemini-1.5-pro-exp-0801": {
     "description": "Gemini 1.5 Pro 0801 offre d'excellentes capacités de traitement multimodal, apportant une plus grande flexibilité au développement d'applications."
