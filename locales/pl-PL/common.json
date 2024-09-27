@@ -152,6 +152,15 @@
   "pin": "Przypnij",
   "pinOff": "Odepnij",
   "privacy": "Polityka prywatności",
+  "quota": {
+    "error": "Błąd: {{message}}",
+    "expiration": "Data wygaśnięcia: {{date}}",
+    "fetchError": "Nie udało się pobrać informacji o limitach",
+    "neverExpires": "Nigdy nie wygasa",
+    "remaining": "Pozostały limit: {{count}} dolarów",
+    "title": "Informacje o limitach",
+    "unavailable": "Informacje o limitach niedostępne"
+  },
   "regenerate": "Regeneruj",
   "rename": "Zmień nazwę",
   "reset": "Resetuj",

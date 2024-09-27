@@ -152,6 +152,15 @@
   "pin": "Fijar",
   "pinOff": "Quitar fijación",
   "privacy": "Política de privacidad",
+  "quota": {
+    "error": "Error: {{message}}",
+    "expiration": "Fecha de expiración: {{date}}",
+    "fetchError": "Error al obtener la información de la cuota",
+    "neverExpires": "Nunca expira",
+    "remaining": "Cuota restante: {{count}} dólares",
+    "title": "Información de la cuota",
+    "unavailable": "Información de la cuota no disponible"
+  },
   "regenerate": "Regenerar",
   "rename": "Renombrar",
   "reset": "Restablecer",

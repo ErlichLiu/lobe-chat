@@ -152,6 +152,15 @@
   "pin": "Pin",
   "pinOff": "Unpin",
   "privacy": "Gizlilik Politikası",
+  "quota": {
+    "error": "Hata: {{message}}",
+    "expiration": "Son kullanım tarihi: {{date}}",
+    "fetchError": "Limit bilgileri alınamadı",
+    "neverExpires": "Asla sona ermeyen",
+    "remaining": "Kalan limit: {{count}} Dolar",
+    "title": "Limit Bilgisi",
+    "unavailable": "Limit bilgisi mevcut değil"
+  },
   "regenerate": "Tekrarla",
   "rename": "Yeniden İsimlendir",
   "reset": "Reset",

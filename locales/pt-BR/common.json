@@ -152,6 +152,15 @@
   "pin": "Fixar",
   "pinOff": "Desafixar",
   "privacy": "Política de Privacidade",
+  "quota": {
+    "error": "Erro: {{message}}",
+    "expiration": "Data de expiração: {{date}}",
+    "fetchError": "Falha ao obter informações da cota",
+    "neverExpires": "Nunca expira",
+    "remaining": "Quota restante: {{count}} dólares",
+    "title": "Informações da cota",
+    "unavailable": "Informações da cota indisponíveis"
+  },
   "regenerate": "Regenerar",
   "rename": "Renomear",
   "reset": "Redefinir",

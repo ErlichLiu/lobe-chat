@@ -152,6 +152,15 @@
   "pin": "Épingler",
   "pinOff": "Désactiver l'épinglage",
   "privacy": "Politique de confidentialité",
+  "quota": {
+    "error": "Erreur : {{message}}",
+    "expiration": "Date d'expiration : {{date}}",
+    "fetchError": "Échec de la récupération des informations de quota",
+    "neverExpires": "Jamais expiré",
+    "remaining": "Quota restant : {{count}} dollars",
+    "title": "Informations sur le quota",
+    "unavailable": "Informations sur le quota non disponibles"
+  },
   "regenerate": "Régénérer",
   "rename": "Renommer",
   "reset": "Réinitialiser",
