@@ -152,6 +152,15 @@
   "pin": "Vastzetten",
   "pinOff": "Vastzetten uitschakelen",
   "privacy": "Privacybeleid",
+  "quota": {
+    "error": "Fout: {{message}}",
+    "expiration": "Vervaldatum: {{date}}",
+    "fetchError": "Kon quota-informatie niet ophalen",
+    "neverExpires": "Nooit vervallen",
+    "remaining": "Beschikbaar saldo: {{count}} dollar",
+    "title": "Quota-informatie",
+    "unavailable": "Quota-informatie niet beschikbaar"
+  },
   "regenerate": "Opnieuw genereren",
   "rename": "Naam wijzigen",
   "reset": "Resetten",

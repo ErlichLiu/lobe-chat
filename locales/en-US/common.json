@@ -152,6 +152,15 @@
   "pin": "Pin",
   "pinOff": "Unpin",
   "privacy": "Privacy Policy",
+  "quota": {
+    "error": "Error: {{message}}",
+    "expiration": "Expiration Time: {{date}}",
+    "fetchError": "Failed to retrieve quota information",
+    "neverExpires": "Never Expires",
+    "remaining": "Remaining Quota: {{count}} USD",
+    "title": "Quota Information",
+    "unavailable": "Quota information is unavailable"
+  },
   "regenerate": "Regenerate",
   "rename": "Rename",
   "reset": "Reset",

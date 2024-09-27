@@ -152,6 +152,15 @@
   "pin": "Anheften",
   "pinOff": "Anheften aufheben",
   "privacy": "Datenschutzrichtlinie",
+  "quota": {
+    "error": "Fehler: {{message}}",
+    "expiration": "Ablaufdatum: {{date}}",
+    "fetchError": "Fehler beim Abrufen der Kontoinformationen",
+    "neverExpires": "Läuft niemals ab",
+    "remaining": "Verbleibendes Limit: {{count}} Dollar",
+    "title": "Limitinformationen",
+    "unavailable": "Limitinformationen nicht verfügbar"
+  },
   "regenerate": "Neu generieren",
   "rename": "Umbenennen",
   "reset": "Zurücksetzen",

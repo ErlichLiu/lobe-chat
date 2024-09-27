@@ -152,6 +152,15 @@
   "pin": "ピン留め",
   "pinOff": "ピン留め解除",
   "privacy": "プライバシーポリシー",
+  "quota": {
+    "error": "エラー：{{message}}",
+    "expiration": "有効期限：{{date}}",
+    "fetchError": "クォータ情報の取得に失敗しました",
+    "neverExpires": "期限なし",
+    "remaining": "残りのクォータ：{{count}} ドル",
+    "title": "クォータ情報",
+    "unavailable": "クォータ情報は利用できません"
+  },
   "regenerate": "再生成",
   "rename": "名前を変更",
   "reset": "リセット",

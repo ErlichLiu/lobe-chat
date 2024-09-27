@@ -152,6 +152,15 @@
   "pin": "Fissa in alto",
   "pinOff": "Annulla fissaggio",
   "privacy": "Informativa sulla privacy",
+  "quota": {
+    "error": "Errore: {{message}}",
+    "expiration": "Data di scadenza: {{date}}",
+    "fetchError": "Impossibile ottenere le informazioni sul limite",
+    "neverExpires": "Non scade mai",
+    "remaining": "Limite rimanente: {{count}} dollari",
+    "title": "Informazioni sul limite",
+    "unavailable": "Informazioni sul limite non disponibili"
+  },
   "regenerate": "Rigenera",
   "rename": "Rinomina",
   "reset": "Ripristina",

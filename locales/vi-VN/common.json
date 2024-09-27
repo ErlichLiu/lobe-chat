@@ -152,6 +152,15 @@
   "pin": "Ghim",
   "pinOff": "Bỏ ghim",
   "privacy": "Chính sách bảo mật",
+  "quota": {
+    "error": "Lỗi: {{message}}",
+    "expiration": "Thời gian hết hạn: {{date}}",
+    "fetchError": "Lấy thông tin hạn mức thất bại",
+    "neverExpires": "Không bao giờ hết hạn",
+    "remaining": "Hạn mức còn lại: {{count}} đô la",
+    "title": "Thông tin hạn mức",
+    "unavailable": "Thông tin hạn mức không khả dụng"
+  },
   "regenerate": "Tạo lại",
   "rename": "Đổi tên",
   "reset": "Đặt lại",
