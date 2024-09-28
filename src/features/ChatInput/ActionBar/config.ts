@@ -42,5 +42,4 @@ export const getLeftActionList: getActionList = (mobile) =>
     'quota',
   ].filter(Boolean) as ActionKeys[];
 
-export const getRightActionList: getActionList = () =>
-  ['clear', 'quota'].filter(Boolean) as ActionKeys[];
+export const getRightActionList: getActionList = () => ['clear'].filter(Boolean) as ActionKeys[];
