@@ -332,8 +332,11 @@
   "gemini-1.5-flash-001": {
     "description": "Gemini 1.5 Flash 001은 효율적인 다중 모달 모델로, 광범위한 응용 프로그램 확장을 지원합니다."
   },
-  "gemini-1.5-flash-8b-exp-0827": {
-    "description": "Gemini 1.5 Flash 8B 0827은 대규모 작업 시나리오 처리를 위해 설계되었으며, 비할 데 없는 처리 속도를 제공합니다."
+  "gemini-1.5-flash-002": {
+    "description": "Gemini 1.5 Flash 002는 효율적인 다중 모달 모델로, 광범위한 응용 프로그램의 확장을 지원합니다."
+  },
+  "gemini-1.5-flash-8b-exp-0924": {
+    "description": "Gemini 1.5 Flash 8B 0924는 최신 실험 모델로, 텍스트 및 다중 모달 사용 사례에서 상당한 성능 향상을 보여줍니다."
   },
   "gemini-1.5-flash-exp-0827": {
     "description": "Gemini 1.5 Flash 0827은 최적화된 다중 모달 처리 능력을 제공하며, 다양한 복잡한 작업 시나리오에 적합합니다."
@@ -343,6 +346,9 @@
   },
   "gemini-1.5-pro-001": {
     "description": "Gemini 1.5 Pro 001은 확장 가능한 다중 모달 AI 솔루션으로, 광범위한 복잡한 작업을 지원합니다."
+  },
+  "gemini-1.5-pro-002": {
+    "description": "Gemini 1.5 Pro 002는 최신 생산 준비 모델로, 특히 수학, 긴 문맥 및 시각적 작업에서 더 높은 품질의 출력을 제공합니다."
   },
   "gemini-1.5-pro-exp-0801": {
     "description": "Gemini 1.5 Pro 0801은 뛰어난 다중 모달 처리 능력을 제공하여 응용 프로그램 개발에 더 큰 유연성을 제공합니다."
