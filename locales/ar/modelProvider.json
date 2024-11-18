@@ -51,6 +51,18 @@
       "title": "استخدام معلومات المصادقة الخاصة بـ Bedrock المخصصة"
     }
   },
+  "cloudflare": {
+    "apiKey": {
+      "desc": "يرجى ملء Cloudflare API Key",
+      "placeholder": "Cloudflare API Key",
+      "title": "Cloudflare API Key"
+    },
+    "baseURLOrAccountID": {
+      "desc": "أدخل رقم حساب Cloudflare أو عنوان URL API المخصص",
+      "placeholder": "رقم حساب Cloudflare / عنوان URL API المخصص",
+      "title": "رقم حساب Cloudflare / عنوان URL API"
+    }
+  },
   "github": {
     "personalAccessToken": {
       "desc": "أدخل رمز الوصول الشخصي الخاص بك على Github، انقر [هنا](https://github.com/settings/tokens) لإنشاء واحد",
@@ -117,6 +129,22 @@
       "downloaded": "{{completed}} / {{total}}",
       "starting": "Starting download...",
       "title": "Download specified Ollama model"
+    }
+  },
+  "sensenova": {
+    "sensenovaAccessKeyID": {
+      "desc": "أدخل معرف مفتاح الوصول لـ SenseNova",
+      "placeholder": "معرف مفتاح الوصول لـ SenseNova",
+      "title": "معرف مفتاح الوصول"
+    },
+    "sensenovaAccessKeySecret": {
+      "desc": "أدخل سر مفتاح الوصول لـ SenseNova",
+      "placeholder": "سر مفتاح الوصول لـ SenseNova",
+      "title": "سر مفتاح الوصول"
+    },
+    "unlock": {
+      "description": "أدخل معرف مفتاح الوصول / سر مفتاح الوصول لبدء الجلسة. التطبيق لن يسجل إعدادات المصادقة الخاصة بك",
+      "title": "استخدم معلومات مصادقة SenseNova المخصصة"
     }
   },
   "wenxin": {

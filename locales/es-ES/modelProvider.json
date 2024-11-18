@@ -51,6 +51,18 @@
       "title": "Usar información de autenticación de Bedrock personalizada"
     }
   },
+  "cloudflare": {
+    "apiKey": {
+      "desc": "Por favor complete la Cloudflare API Key",
+      "placeholder": "Cloudflare API Key",
+      "title": "Cloudflare API Key"
+    },
+    "baseURLOrAccountID": {
+      "desc": "Ingrese el ID de cuenta de Cloudflare o la dirección URL personalizada de API",
+      "placeholder": "ID de cuenta de Cloudflare / URL de API personalizada",
+      "title": "ID de cuenta de Cloudflare / dirección URL de API"
+    }
+  },
   "github": {
     "personalAccessToken": {
       "desc": "Introduce tu PAT de Github, haz clic [aquí](https://github.com/settings/tokens) para crear uno",
@@ -117,6 +129,22 @@
       "downloaded": "{{completed}} / {{total}}",
       "starting": "Starting download...",
       "title": "Download specified Ollama model"
+    }
+  },
+  "sensenova": {
+    "sensenovaAccessKeyID": {
+      "desc": "Introduce el ID de clave de acceso de SenseNova",
+      "placeholder": "ID de clave de acceso de SenseNova",
+      "title": "ID de clave de acceso"
+    },
+    "sensenovaAccessKeySecret": {
+      "desc": "Introduce la clave secreta de acceso de SenseNova",
+      "placeholder": "Clave secreta de acceso de SenseNova",
+      "title": "Clave secreta de acceso"
+    },
+    "unlock": {
+      "description": "Introduce tu ID de clave de acceso / clave secreta de acceso para comenzar la sesión. La aplicación no registrará tu configuración de autenticación",
+      "title": "Usar información de autenticación personalizada de SenseNova"
     }
   },
   "wenxin": {
