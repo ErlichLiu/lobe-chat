@@ -18,6 +18,7 @@ const leftActions = [
   'stt',
   'tools',
   'token',
+  'quota',
 ] as ActionKeys[];
 
 const rightActions = ['clear'] as ActionKeys[];
