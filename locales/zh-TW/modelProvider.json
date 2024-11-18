@@ -51,6 +51,18 @@
       "title": "使用自定義 Bedrock 驗證資訊"
     }
   },
+  "cloudflare": {
+    "apiKey": {
+      "desc": "請填入 Cloudflare API Key",
+      "placeholder": "Cloudflare API Key",
+      "title": "Cloudflare API Key"
+    },
+    "baseURLOrAccountID": {
+      "desc": "填入 Cloudflare 帳戶 ID 或 自定義 API 位址",
+      "placeholder": "Cloudflare 帳戶 ID / 自定義 API 位址",
+      "title": "Cloudflare 帳戶 ID / API 位址"
+    }
+  },
   "github": {
     "personalAccessToken": {
       "desc": "填入你的 Github 個人存取權杖，點擊[這裡](https://github.com/settings/tokens) 創建",
@@ -117,6 +129,22 @@
       "downloaded": "{{completed}} / {{total}}",
       "starting": "開始下載...",
       "title": "下載指定的 Ollama 模型"
+    }
+  },
+  "sensenova": {
+    "sensenovaAccessKeyID": {
+      "desc": "填入 SenseNova Access Key ID",
+      "placeholder": "SenseNova Access Key ID",
+      "title": "Access Key ID"
+    },
+    "sensenovaAccessKeySecret": {
+      "desc": "填入 SenseNova Access Key Secret",
+      "placeholder": "SenseNova Access Key Secret",
+      "title": "Access Key Secret"
+    },
+    "unlock": {
+      "description": "輸入你的 Access Key ID / Access Key Secret 即可開始會話。應用不會記錄你的鑑權配置",
+      "title": "使用自訂的 SenseNova 鑑權資訊"
     }
   },
   "wenxin": {

@@ -51,6 +51,18 @@
       "title": "Использовать пользовательскую информацию аутентификации Bedrock"
     }
   },
+  "cloudflare": {
+    "apiKey": {
+      "desc": "Пожалуйста, заполните Cloudflare API Key",
+      "placeholder": "Cloudflare API Key",
+      "title": "Cloudflare API Key"
+    },
+    "baseURLOrAccountID": {
+      "desc": "Введите ID аккаунта Cloudflare или адрес API по умолчанию",
+      "placeholder": "ID аккаунта Cloudflare / адрес API по умолчанию",
+      "title": "ID аккаунта Cloudflare / адрес API"
+    }
+  },
   "github": {
     "personalAccessToken": {
       "desc": "Введите ваш персональный токен доступа GitHub (PAT), нажмите [здесь](https://github.com/settings/tokens), чтобы создать его",
@@ -117,6 +129,22 @@
       "downloaded": "{{completed}} / {{total}}",
       "starting": "Starting download...",
       "title": "Download specified Ollama model"
+    }
+  },
+  "sensenova": {
+    "sensenovaAccessKeyID": {
+      "desc": "Введите SenseNova Access Key ID",
+      "placeholder": "SenseNova Access Key ID",
+      "title": "Access Key ID"
+    },
+    "sensenovaAccessKeySecret": {
+      "desc": "Введите SenseNova Access Key Secret",
+      "placeholder": "SenseNova Access Key Secret",
+      "title": "Access Key Secret"
+    },
+    "unlock": {
+      "description": "Введите ваш Access Key ID / Access Key Secret, чтобы начать сессию. Приложение не будет записывать ваши настройки аутентификации",
+      "title": "Используйте пользовательскую аутентификацию SenseNova"
     }
   },
   "wenxin": {

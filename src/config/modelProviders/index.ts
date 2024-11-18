@@ -6,6 +6,7 @@ import AnthropicProvider from './anthropic';
 import AzureProvider from './azure';
 import BaichuanProvider from './baichuan';
 import BedrockProvider from './bedrock';
+import CloudflareProvider from './cloudflare';
 import DeepSeekProvider from './deepseek';
 import FireworksAIProvider from './fireworksai';
 import GithubProvider from './github';
@@ -22,6 +23,7 @@ import OpenAIProvider from './openai';
 import OpenRouterProvider from './openrouter';
 import PerplexityProvider from './perplexity';
 import QwenProvider from './qwen';
+import SenseNovaProvider from './sensenova';
 import SiliconCloudProvider from './siliconcloud';
 import SparkProvider from './spark';
 import StepfunProvider from './stepfun';
@@ -29,6 +31,7 @@ import TaichuProvider from './taichu';
 import TogetherAIProvider from './togetherai';
 import UpstageProvider from './upstage';
 import WenxinProvider from './wenxin';
+import XAIProvider from './xai';
 import ZeroOneProvider from './zeroone';
 import ZhiPuProvider from './zhipu';
 
@@ -51,11 +54,13 @@ export const LOBE_DEFAULT_MODEL_LIST: ChatModelCard[] = [
   PerplexityProvider.chatModels,
   AnthropicProvider.chatModels,
   HuggingFaceProvider.chatModels,
+  XAIProvider.chatModels,
   ZeroOneProvider.chatModels,
   StepfunProvider.chatModels,
   NovitaProvider.chatModels,
   BaichuanProvider.chatModels,
   TaichuProvider.chatModels,
+  CloudflareProvider.chatModels,
   Ai360Provider.chatModels,
   SiliconCloudProvider.chatModels,
   UpstageProvider.chatModels,
@@ -63,6 +68,7 @@ export const LOBE_DEFAULT_MODEL_LIST: ChatModelCard[] = [
   Ai21Provider.chatModels,
   HunyuanProvider.chatModels,
   WenxinProvider.chatModels,
+  SenseNovaProvider.chatModels,
 ].flat();
 
 export const DEFAULT_MODEL_PROVIDER_LIST = [
@@ -75,6 +81,7 @@ export const DEFAULT_MODEL_PROVIDER_LIST = [
   DeepSeekProvider,
   HuggingFaceProvider,
   OpenRouterProvider,
+  CloudflareProvider,
   GithubProvider,
   NovitaProvider,
   TogetherAIProvider,
@@ -84,12 +91,14 @@ export const DEFAULT_MODEL_PROVIDER_LIST = [
   MistralProvider,
   Ai21Provider,
   UpstageProvider,
+  XAIProvider,
   QwenProvider,
   WenxinProvider,
   HunyuanProvider,
   SparkProvider,
   ZhiPuProvider,
   ZeroOneProvider,
+  SenseNovaProvider,
   StepfunProvider,
   MoonshotProvider,
   BaichuanProvider,
@@ -114,6 +123,7 @@ export { default as AnthropicProviderCard } from './anthropic';
 export { default as AzureProviderCard } from './azure';
 export { default as BaichuanProviderCard } from './baichuan';
 export { default as BedrockProviderCard } from './bedrock';
+export { default as CloudflareProviderCard } from './cloudflare';
 export { default as DeepSeekProviderCard } from './deepseek';
 export { default as FireworksAIProviderCard } from './fireworksai';
 export { default as GithubProviderCard } from './github';
@@ -130,6 +140,7 @@ export { default as OpenAIProviderCard } from './openai';
 export { default as OpenRouterProviderCard } from './openrouter';
 export { default as PerplexityProviderCard } from './perplexity';
 export { default as QwenProviderCard } from './qwen';
+export { default as SenseNovaProviderCard } from './sensenova';
 export { default as SiliconCloudProviderCard } from './siliconcloud';
 export { default as SparkProviderCard } from './spark';
 export { default as StepfunProviderCard } from './stepfun';
@@ -137,5 +148,6 @@ export { default as TaichuProviderCard } from './taichu';
 export { default as TogetherAIProviderCard } from './togetherai';
 export { default as UpstageProviderCard } from './upstage';
 export { default as WenxinProviderCard } from './wenxin';
+export { default as XAIProviderCard } from './xai';
 export { default as ZeroOneProviderCard } from './zeroone';
 export { default as ZhiPuProviderCard } from './zhipu';

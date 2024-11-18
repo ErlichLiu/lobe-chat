@@ -4,6 +4,19 @@ import { ModelProviderCard } from '@/types/llm';
 const SiliconCloud: ModelProviderCard = {
   chatModels: [
     {
+      description:
+        'Hunyuan-Large 是业界最大的开源 Transformer 架构 MoE 模型，拥有 3890 亿总参数量和 520 亿激活参数量。',
+      displayName: 'Hunyuan Large',
+      enabled: true,
+      id: 'Tencent/Hunyuan-A52B-Instruct',
+      pricing: {
+        currency: 'CNY',
+        input: 21,
+        output: 21,
+      },
+      tokens: 32_768,
+    },
+    {
       description: 'DeepSeek V2.5 集合了先前版本的优秀特征，增强了通用和编码能力。',
       displayName: 'DeepSeek V2.5',
       enabled: true,
@@ -67,7 +80,8 @@ const SiliconCloud: ModelProviderCard = {
       tokens: 131_072,
     },
     {
-      description: 'Qwen2-VL 是 Qwen-VL 模型的最新迭代版本，在视觉理解基准测试中达到了最先进的性能。',
+      description:
+        'Qwen2-VL 是 Qwen-VL 模型的最新迭代版本，在视觉理解基准测试中达到了最先进的性能。',
       displayName: 'Qwen2 VL 7B',
       enabled: true,
       id: 'Pro/Qwen/Qwen2-VL-7B-Instruct',
@@ -80,7 +94,8 @@ const SiliconCloud: ModelProviderCard = {
       vision: true,
     },
     {
-      description: 'Qwen2-VL 是 Qwen-VL 模型的最新迭代版本，在视觉理解基准测试中达到了最先进的性能。',
+      description:
+        'Qwen2-VL 是 Qwen-VL 模型的最新迭代版本，在视觉理解基准测试中达到了最先进的性能。',
       displayName: 'Qwen2 VL 72B',
       enabled: true,
       id: 'Qwen/Qwen2-VL-72B-Instruct',
@@ -105,12 +120,12 @@ const SiliconCloud: ModelProviderCard = {
     },
     {
       description: 'Qwen2.5-Coder 专注于代码编写。',
-      displayName: 'Qwen2.5 Coder 7B',
-      id: 'Qwen/Qwen2.5-Coder-7B-Instruct',
+      displayName: 'Qwen2.5 Coder 32B',
+      id: 'Qwen/Qwen2.5-Coder-32B-Instruct',
       pricing: {
         currency: 'CNY',
-        input: 0,
-        output: 0,
+        input: 1.26,
+        output: 1.26,
       },
       tokens: 32_768,
     },
@@ -139,7 +154,8 @@ const SiliconCloud: ModelProviderCard = {
       tokens: 32_768,
     },
     {
-      description: 'InternVL2在各种视觉语言任务上展现出了卓越的性能，包括文档和图表理解、场景文本理解、OCR、科学和数学问题解决等。',
+      description:
+        'InternVL2在各种视觉语言任务上展现出了卓越的性能，包括文档和图表理解、场景文本理解、OCR、科学和数学问题解决等。',
       displayName: 'InternVL2 8B',
       id: 'Pro/OpenGVLab/InternVL2-8B',
       pricing: {
@@ -151,7 +167,8 @@ const SiliconCloud: ModelProviderCard = {
       vision: true,
     },
     {
-      description: 'InternVL2在各种视觉语言任务上展现出了卓越的性能，包括文档和图表理解、场景文本理解、OCR、科学和数学问题解决等。',
+      description:
+        'InternVL2在各种视觉语言任务上展现出了卓越的性能，包括文档和图表理解、场景文本理解、OCR、科学和数学问题解决等。',
       displayName: 'InternVL2 26B',
       id: 'OpenGVLab/InternVL2-26B',
       pricing: {
@@ -163,7 +180,8 @@ const SiliconCloud: ModelProviderCard = {
       vision: true,
     },
     {
-      description: 'InternVL2在各种视觉语言任务上展现出了卓越的性能，包括文档和图表理解、场景文本理解、OCR、科学和数学问题解决等。',
+      description:
+        'InternVL2在各种视觉语言任务上展现出了卓越的性能，包括文档和图表理解、场景文本理解、OCR、科学和数学问题解决等。',
       displayName: 'InternVL2 Llama3 76B',
       id: 'OpenGVLab/InternVL2-Llama3-76B',
       pricing: {
@@ -269,7 +287,8 @@ const SiliconCloud: ModelProviderCard = {
       tokens: 32_768,
     },
     {
-      description: 'Llama 3.1 Nemotron 70B 是由 NVIDIA 定制的大型语言模型，旨在提高 LLM 生成的响应对用户查询的帮助程度。',
+      description:
+        'Llama 3.1 Nemotron 70B 是由 NVIDIA 定制的大型语言模型，旨在提高 LLM 生成的响应对用户查询的帮助程度。',
       displayName: 'Llama 3.1 Nemotron 70B',
       enabled: true,
       id: 'nvidia/Llama-3.1-Nemotron-70B-Instruct',
