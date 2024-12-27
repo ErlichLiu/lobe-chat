@@ -1,35 +1,35 @@
 'use client';
 
-import isEqual from 'fast-deep-equal';
-import React, { memo } from 'react';
+import React, { memo, useCallback } from 'react';
 
-import { InboxWelcome, VirtualizedList } from '@/features/Conversation';
+import { SkeletonList, VirtualizedList } from '@/features/Conversation';
+import { useFetchMessages } from '@/hooks/useFetchMessages';
 import { useChatStore } from '@/store/chat';
 import { chatSelectors } from '@/store/chat/selectors';
-import { useSessionStore } from '@/store/session';
+
+import MainChatItem from './ChatItem';
+import Welcome from './WelcomeChatItem';
 
 interface ListProps {
   mobile?: boolean;
 }
 
 const Content = memo<ListProps>(({ mobile }) => {
-  const [activeTopicId, useFetchMessages, showInboxWelcome, isCurrentChatLoaded] = useChatStore(
-    (s) => [
-      s.activeTopicId,
-      s.useFetchMessages,
-      chatSelectors.showInboxWelcome(s),
-      chatSelectors.isCurrentChatLoaded(s),
-    ],
+  const [isCurrentChatLoaded] = useChatStore((s) => [chatSelectors.isCurrentChatLoaded(s)]);
+
+  useFetchMessages();
+  const data = useChatStore(chatSelectors.mainDisplayChatIDs);
+
+  const itemContent = useCallback(
+    (index: number, id: string) => <MainChatItem id={id} index={index} />,
+    [mobile],
   );
 
-  const [sessionId] = useSessionStore((s) => [s.activeId]);
-  useFetchMessages(sessionId, activeTopicId);
+  if (!isCurrentChatLoaded) return <SkeletonList mobile={mobile} />;
 
-  const data = useChatStore(chatSelectors.currentChatIDsWithGuideMessage, isEqual);
+  if (data.length === 0) return <Welcome />;
 
-  if (showInboxWelcome && isCurrentChatLoaded) return <InboxWelcome />;
-
-  return <VirtualizedList dataSource={data} mobile={mobile} />;
+  return <VirtualizedList dataSource={data} itemContent={itemContent} mobile={mobile} />;
 });
 
 Content.displayName = 'ChatListRender';

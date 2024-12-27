@@ -56,20 +56,22 @@ export interface ChatFileChunk {
   text: string;
 }
 
+export interface ChatMessageExtra {
+  fromModel?: string;
+  fromProvider?: string;
+  // 翻译
+  translate?: ChatTranslate | false | null;
+  // TTS
+  tts?: ChatTTS;
+}
+
 export interface ChatMessage extends BaseDataModel {
   chunksList?: ChatFileChunk[];
   content: string;
   error?: ChatMessageError | null;
 
   // 扩展字段
-  extra?: {
-    fromModel?: string;
-    fromProvider?: string;
-    // 翻译
-    translate?: ChatTranslate | false | null;
-    // TTS
-    tts?: ChatTTS;
-  } & Record<string, any>;
+  extra?: ChatMessageExtra;
   fileList?: ChatFileItem[];
   /**
    * this is a deprecated field, only use in client db
@@ -104,8 +106,9 @@ export interface ChatMessage extends BaseDataModel {
   role: MessageRoleType;
 
   sessionId?: string;
-  tool_call_id?: string;
+  threadId?: string | null;
 
+  tool_call_id?: string;
   tools?: ChatToolPayload[];
   /**
    * 保存到主题的消息
@@ -129,17 +132,32 @@ export interface CreateMessageParams
   fromProvider?: string;
   role: MessageRoleType;
   sessionId: string;
+  threadId?: string | null;
   topicId?: string;
   traceId?: string;
 }
 
 export interface SendMessageParams {
+  /**
+   * create a thread
+   */
+  createThread?: boolean;
   files?: UploadFileItem[];
   /**
    *
    * https://github.com/lobehub/lobe-chat/pull/2086
    */
   isWelcomeQuestion?: boolean;
+  message: string;
+  onlyAddUserMessage?: boolean;
+}
+
+export interface SendThreadMessageParams {
+  /**
+   * create a thread
+   */
+  createNewThread?: boolean;
+  // files?: UploadFileItem[];
   message: string;
   onlyAddUserMessage?: boolean;
 }

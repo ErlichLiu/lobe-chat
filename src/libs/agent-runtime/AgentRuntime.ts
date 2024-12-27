@@ -12,11 +12,14 @@ import { LobeBedrockAI, LobeBedrockAIParams } from './bedrock';
 import { LobeCloudflareAI, LobeCloudflareParams } from './cloudflare';
 import { LobeDeepSeekAI } from './deepseek';
 import { LobeFireworksAI } from './fireworksai';
+import { LobeGiteeAI } from './giteeai';
 import { LobeGithubAI } from './github';
 import { LobeGoogleAI } from './google';
 import { LobeGroq } from './groq';
+import { LobeHigressAI } from './higress';
 import { LobeHuggingFaceAI } from './huggingface';
 import { LobeHunyuanAI } from './hunyuan';
+import { LobeInternLMAI } from './internlm';
 import { LobeMinimaxAI } from './minimax';
 import { LobeMistralAI } from './mistral';
 import { LobeMoonshotAI } from './moonshot';
@@ -136,11 +139,14 @@ class AgentRuntime {
       cloudflare: Partial<LobeCloudflareParams>;
       deepseek: Partial<ClientOptions>;
       fireworksai: Partial<ClientOptions>;
+      giteeai: Partial<ClientOptions>;
       github: Partial<ClientOptions>;
       google: { apiKey?: string; baseURL?: string };
       groq: Partial<ClientOptions>;
+      higress: Partial<ClientOptions>;
       huggingface: { apiKey?: string; baseURL?: string };
       hunyuan: Partial<ClientOptions>;
+      internlm: Partial<ClientOptions>;
       minimax: Partial<ClientOptions>;
       mistral: Partial<ClientOptions>;
       moonshot: Partial<ClientOptions>;
@@ -301,6 +307,11 @@ class AgentRuntime {
         break;
       }
 
+      case ModelProvider.GiteeAI: {
+        runtimeModel = new LobeGiteeAI(params.giteeai);
+        break;
+      }
+
       case ModelProvider.Upstage: {
         runtimeModel = new LobeUpstageAI(params.upstage);
         break;
@@ -322,7 +333,7 @@ class AgentRuntime {
       }
 
       case ModelProvider.SenseNova: {
-        runtimeModel = await LobeSenseNovaAI.fromAPIKey(params.sensenova);
+        runtimeModel = new LobeSenseNovaAI(params.sensenova);
         break;
       }
 
@@ -333,6 +344,16 @@ class AgentRuntime {
 
       case ModelProvider.Cloudflare: {
         runtimeModel = new LobeCloudflareAI(params.cloudflare ?? {});
+        break;
+      }
+
+      case ModelProvider.InternLM: {
+        runtimeModel = new LobeInternLMAI(params.internlm);
+        break;
+      }
+
+      case ModelProvider.Higress: {
+        runtimeModel = new LobeHigressAI(params.higress);
         break;
       }
     }

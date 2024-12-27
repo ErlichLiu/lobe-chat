@@ -16,18 +16,18 @@ import Files from './Files';
 import InputArea from './InputArea';
 import SendButton from './Send';
 
-const defaultLeftActions = [
+const defaultLeftActions: ActionKeys[] = [
   'model',
   'fileUpload',
   'knowledgeBase',
   'temperature',
   'history',
   'tools',
-  'token',
   'quota',
+  'mainToken',
 ] as ActionKeys[];
 
-const defaultRightActions = ['clear'] as ActionKeys[];
+const defaultRightActions: ActionKeys[] = ['clear'];
 
 const MobileChatInput = memo(() => {
   const theme = useTheme();
