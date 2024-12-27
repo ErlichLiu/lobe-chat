@@ -7,6 +7,8 @@ export const o1Models = new Set([
   'o1-preview-2024-09-12',
   'o1-mini',
   'o1-mini-2024-09-12',
+  'o1',
+  'o1-2024-12-17',
 ]);
 
 export const pruneO1Payload = (payload: ChatStreamPayload) => ({
@@ -17,7 +19,6 @@ export const pruneO1Payload = (payload: ChatStreamPayload) => ({
     role: message.role === 'system' ? 'user' : message.role,
   })),
   presence_penalty: 0,
-  stream: false,
   temperature: 1,
   top_p: 1,
 });

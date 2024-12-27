@@ -5,7 +5,7 @@ import Knowledge from './Knowledge';
 import ModelSwitch from './ModelSwitch';
 import QuotaDisplay from './QuotaDisplay';
 import Temperature from './Temperature';
-import Token from './Token';
+import { MainToken, PortalToken } from './Token';
 import Tools from './Tools';
 import Upload from './Upload';
 
@@ -14,11 +14,12 @@ export const actionMap = {
   fileUpload: Upload,
   history: History,
   knowledgeBase: Knowledge,
+  mainToken: MainToken,
   model: ModelSwitch,
+  portalToken: PortalToken,
   quota: QuotaDisplay,
   stt: STT,
   temperature: Temperature,
-  token: Token,
   tools: Tools,
 } as const;
 

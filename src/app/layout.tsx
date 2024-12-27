@@ -22,11 +22,13 @@ const RootLayout = async ({ children, modal }: RootLayoutProps) => {
   const cookieStore = await cookies();
 
   const lang = cookieStore.get(LOBE_LOCALE_COOKIE);
-  const direction = isRtlLang(lang?.value || DEFAULT_LANG) ? 'rtl' : 'ltr';
-  const mobile = isMobileDevice();
+  const locale = lang?.value || DEFAULT_LANG;
+
+  const direction = isRtlLang(locale) ? 'rtl' : 'ltr';
+  const mobile = await isMobileDevice();
 
   return (
-    <html dir={direction} lang={lang?.value || DEFAULT_LANG} suppressHydrationWarning>
+    <html dir={direction} lang={locale} suppressHydrationWarning>
       <body>
         <GlobalProvider>
           <AuthProvider>
@@ -47,7 +49,7 @@ export default RootLayout;
 export { generateMetadata } from './metadata';
 
 export const generateViewport = async (): ResolvingViewport => {
-  const isMobile = isMobileDevice();
+  const isMobile = await isMobileDevice();
 
   const dynamicScale = isMobile ? { maximumScale: 1, userScalable: false } : {};
 
