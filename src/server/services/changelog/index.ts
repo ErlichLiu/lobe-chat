@@ -54,7 +54,7 @@ export class ChangelogService {
       return this.mergeChangelogs(data.cloud, data.community).slice(0, 5);
     } catch (e) {
       const cause = (e as Error).cause as { code: string };
-      if (cause.code.includes('ETIMEDOUT')) {
+      if (cause?.code.includes('ETIMEDOUT')) {
         console.warn(
           '[ChangelogFetchTimeout] fail to fetch changelog lists due to network timeout. Please check your network connection.',
         );
@@ -166,7 +166,7 @@ export class ChangelogService {
     const minVersion = semver.lt(v1, v2) ? v1 : v2;
     const maxVersion = semver.gt(v1, v2) ? v1 : v2;
 
-    return [maxVersion, minVersion];
+    return [minVersion, maxVersion];
   }
 
   private genUrl(path: string) {
