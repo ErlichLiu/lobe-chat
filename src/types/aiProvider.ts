@@ -18,6 +18,7 @@ export const AiProviderSDKEnum = {
   Azure: 'azure',
   Bedrock: 'bedrock',
   Cloudflare: 'cloudflare',
+  Doubao: 'doubao',
   Google: 'google',
   Huggingface: 'huggingface',
   Ollama: 'ollama',
@@ -158,8 +159,8 @@ export interface AiProviderDetailItem {
 // Update
 export const UpdateAiProviderSchema = z.object({
   config: z.object({}).passthrough().optional(),
-  description: z.string().optional(),
-  logo: z.string().optional(),
+  description: z.string().nullable().optional(),
+  logo: z.string().nullable().optional(),
   name: z.string(),
   sdkType: z.enum(['openai', 'anthropic']).optional(),
 });

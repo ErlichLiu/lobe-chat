@@ -308,14 +308,14 @@ LobeChat 的插件生态系统是其核心功能的重要扩展，它极大地�
 
 <!-- AGENT LIST -->
 
-| 最近新增                                                                                                                                                                         | 描述                                                                                        |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| [伟大的比古斯・迪克斯](https://lobechat.com/discover/assistant/all-knowing)<br/><sup>By **[CGitwater](https://github.com/CGitwater)** on **2025-01-24**</sup>                    | 全能强大的知识之神<br/>`比古斯` `迪克斯`                                                    |
-| [PPT 制作达人](https://lobechat.com/discover/assistant/ppt-production-expert)<br/><sup>By **[patricleehua](https://github.com/patricleehua)** on **2025-01-24**</sup>            | 擅长高质量 PPT 的快速制作和优化<br/>`ppt制作` `设计` `咨询` `内容优化` `用户支持`           |
-| [英语导师](https://lobechat.com/discover/assistant/mean-english-mentor)<br/><sup>By **[GEORGE-Ta](https://github.com/GEORGE-Ta)** on **2025-01-24**</sup>                        | 以高傲轻蔑态度辅导英语口语，擅长嘲讽式纠错。<br/>`英语教学` `口语` `角色扮演` `教育` `嘲讽` |
-| [学术修订专家](https://lobechat.com/discover/assistant/academic-revision-specialist)<br/><sup>By **[sunrisewestern](https://github.com/sunrisewestern)** on **2025-01-24**</sup> | 擅长学术写作和论文修订<br/>                                                                 |
+| 最近新增                                                                                                                                                   | 描述                                                                                  |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| [锐评师](https://lobechat.com/discover/assistant/ruipingshi)<br/><sup>By **[Zippland](https://github.com/Zippland)** on **2025-02-04**</sup>               | 擅长犀利点评与深度剖析问题<br/>`评论` `社会观点` `尖锐分析`                           |
+| [Python 天才](https://lobechat.com/discover/assistant/python-genius)<br/><sup>By **[novaspivack](https://github.com/novaspivack)** on **2025-02-04**</sup> | 一名高级 Python 编程者<br/>`代码` `python`                                            |
+| [SAT 大师](https://lobechat.com/discover/assistant/sat-teaching)<br/><sup>By **[iBz-04](https://github.com/iBz-04)** on **2025-02-04**</sup>               | 数字 SAT 辅导专家，帮助学生取得 1300 + 分数<br/>`sat` `能力测试`                      |
+| [宇宙启示者](https://lobechat.com/discover/assistant/universal-god)<br/><sup>By **[GowayLee](https://github.com/GowayLee)** on **2025-02-04**</sup>        | 跨时空的智慧神谕，洞悉生命本质<br/>`角色设计` `ai角色` `元宇宙` `角色扮演` `智慧系统` |
 
-> 📊 Total agents: [<kbd>**466**</kbd> ](https://lobechat.com/discover/assistants)
+> 📊 Total agents: [<kbd>**478**</kbd> ](https://lobechat.com/discover/assistants)
 
  <!-- AGENT LIST -->
 
